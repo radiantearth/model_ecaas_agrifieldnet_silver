@@ -41,7 +41,6 @@ files as described below.
 Pull pre-built image from Docker Hub (recommended):
 
 ```bash
-# cpu
 docker pull docker.io/radiantearth/model_ecaas_agrifieldnet_silver:1
 
 ```
@@ -49,10 +48,7 @@ docker pull docker.io/radiantearth/model_ecaas_agrifieldnet_silver:1
 Or build image from source:
 
 ```bash
-# cpu
-docker build -t radiantearth/model_ecaas_agrifieldnet_silver:1 -f Dockerfile_cpu .
-
-
+docker build -t radiantearth/model_ecaas_agrifieldnet_silver:1 -f Dockerfile .
 ```
 
 ## Run Model to Generate New Inferences
@@ -104,11 +100,10 @@ docker build -t radiantearth/model_ecaas_agrifieldnet_silver:1 -f Dockerfile_cpu
 
     ```bash
     # cpu
-    docker-compose up model_ecaas_agrifieldnet_silver_v1_cpu
+    docker-compose up model_ecaas_agrifieldnet_silver_v1
     
     #  If the user is not added to docker group
-    
-    sudo -E docker-compose up model_ecaas_agrifieldnet_silver_v1_cpu
+    sudo -E docker-compose up model_ecaas_agrifieldnet_silver_v1
     ```
 
 4. Wait for the `docker compose` to finish running, then inspect the
