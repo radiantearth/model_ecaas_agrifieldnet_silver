@@ -38,18 +38,12 @@ OUTPUT_DATA = args.OUTPUT_DATA
 
 # Selected bands
 selected_bands = ['B01', 'B02', 'B03', 'B04','B05', 'B06', 'B07', 'B08','B8A', 'B09', 'B11', 'B12']
-#print(f"{INPUT_DATA}/chips/Images/*")
-imgs_folders = glob.glob(f"{INPUT_DATA}/chips/Images/*")  
-#print(imgs_folders)
+imgs_folders = glob.glob(f"{INPUT_DATA}/chips/images/*")  
 test_folder_ids = [i.split("/")[-1] for i in imgs_folders]
 test_field_paths = [f'{INPUT_DATA}/chips/fields/{i}/field_ids.tif' for i in test_folder_ids]
 
-#print(test_folder_ids)
-#print(test_field_paths)
-
 test_data = pd.DataFrame(test_folder_ids , columns=['unique_folder_id'])
 test_data['field_paths'] = test_field_paths
-
 extract_test_data = feature_extractor(test_data, INPUT_DATA)
 
 # Each field has several pixels in| the data. 

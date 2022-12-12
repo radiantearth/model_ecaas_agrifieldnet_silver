@@ -44,7 +44,7 @@ def feature_extractor(data_, INPUT_DATA):
         field_array = field_src.read(1)
         field_ids = np.append(field_ids, field_array.flatten())
         
-        bands_src = [rasterio.open(f"{INPUT_DATA}/chips/Images/{tile_id}/{band}.tif") for band in selected_bands]
+        bands_src = [rasterio.open(f"{INPUT_DATA}/chips/images/{tile_id}/{band}.tif") for band in selected_bands]
         bands_array = [np.expand_dims(band.read(1).flatten(), axis=1) for band in bands_src]
         X_tile = np.hstack(bands_array)
 
@@ -77,7 +77,7 @@ def fields_centroids(data_, INPUT_DATA):
         field_array = field_src.read(1)
         fields = list(np.unique(field_array))
         
-        band = rasterio.open(f"{INPUT_DATA}/chips/Images/{tile_id}/B01.tif")
+        band = rasterio.open(f"{INPUT_DATA}/chips/images/{tile_id}/B01.tif")
         band_array = band.read(1)
 
         for field in fields:
