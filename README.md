@@ -23,7 +23,6 @@ and other details in the [model documentation](/docs/index.md).
 |-----------|--------|
 |30 GB RAM | 30 GB RAM|
 
-
 ## Get Started With Inferencing
 
 First clone this Git repository.
@@ -72,16 +71,13 @@ docker build -t radiantearth/model_ecaas_agrifieldnet_silver:1 -f Dockerfile .
                      * File name: `B09.tif` Type=Byte, ColorInterp=NIR09
                      * File name: `B11.tif` Type=Byte, ColorInterp=SWIR16
                      * File name: `B12.tif` Type=Byte, ColorInterp=SWIR22
-                   
-                     * File Format: GeoTIFF, 256x256
-                     * Coordinate Reference System: WGS84 / UTM
+                         * File Format: GeoTIFF, 256x256
+                         * Coordinate Reference System: WGS84 / UTM
             * `fields` Corresponding field ids for each pixel in Sentinel-2 images:
                 * Folder name: `chip_id` e.g. `00c23`  Corresponding field ids:
                      * File name: `field_ids.tif`
-           
                      * File Format: GeoTIFF, 256x256
                      * Coordinate Reference System:  WGS84 / UTM
-             
         * `/input/checkpoint` the model checkpoint `lgbms, xgbms, cats`.
             Please note: the model checkpoint is included in this repository.
     * The `output/` folder is where the model will write inferencing results.
@@ -99,7 +95,6 @@ docker build -t radiantearth/model_ecaas_agrifieldnet_silver:1 -f Dockerfile .
 3. Run the appropriate Docker Compose command for your system
 
     ```bash
-    # cpu
     docker-compose up model_ecaas_agrifieldnet_silver_v1
     
     #  If the user is not added to docker group
