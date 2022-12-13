@@ -45,9 +45,32 @@
       "href": "https://mlhub.earth/data/ref_agrifieldnet_competition_v1",
       "type": "text/html",
       "title": "AgriFieldNet Competition Dataset"
+    },
+    {
+      "rel": "ml-model:inferencing-image",
+      "href": "docker://docker.io/radiantearth/model_ecaas_agrifieldnet_silver:1",
+      "type": "docker-image",
+      "title": "Weighted Tree-based Crop Classification Models for Imbalanced Datasets"
     }
   ],
-  "assets": {},
+  "assets": {
+    "inferencing-compose": {
+      "href": "https://radiantearth.github.io/model_ecaas_agrifieldnet_silver/docker-compose.yml",
+      "type": "text/x-yaml; application=compose",
+      "roles": [
+        "ml-model:inference-runtime"
+      ],
+      "title": "Model Inferencing Runtime"
+    },
+    "inferencing-checkpoint": {
+      "href": "https://radiantearth.github.io/model_ecaas_agrifieldnet_silver/data/input/checkpoint",
+      "type": "application/octet-stream",
+      "roles": [
+        "ml-model:checkpoint"
+      ],
+      "title": "Final Model Checkpoint"
+    }
+  },
   "geometry": {
     "type": "MultiPolygon",
     "bbox": [
