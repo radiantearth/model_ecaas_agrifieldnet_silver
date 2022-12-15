@@ -1,7 +1,5 @@
 FROM continuumio/miniconda3
 
-MAINTAINER Mohammad Alasawedah
-
 WORKDIR /usr/src/app
 
 COPY . .

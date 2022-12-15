@@ -1,8 +1,8 @@
 version: "3"
 services:
 
-  model_ecaas_agrifieldnet_silver_v1_cpu:
-    image:  masawdah/model_ecaas_agrifieldnet_silver:1
+  model_ecaas_agrifieldnet_silver_v1:
+    image:  radiantearth/model_ecaas_agrifieldnet_silver:1
     volumes:
       - "${INPUT_DATA}:/usr/src/app/data/input"
       - "${OUTPUT_DATA}:/usr/src/app/data/output"
