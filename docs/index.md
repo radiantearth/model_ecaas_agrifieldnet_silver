@@ -21,7 +21,7 @@ MLHub model id: `model_ecaas_agrifieldnet_silver_v1`. Browse on [Radiant MLHub](
 
 ## Citation
 
-Alasawedah, M. "Weighted Tree-based Crop Classification Models for Imbalanced Datasets",
+Alasawdah, M. "Weighted Tree-based Crop Classification Models for Imbalanced Datasets",
 Version 1.0, Radiant MLHub. [Date Accessed] Radiant MLHub <https://doi.org/10.34911/rdnt.qiuwp5>
 
 ## License
@@ -30,7 +30,7 @@ Version 1.0, Radiant MLHub. [Date Accessed] Radiant MLHub <https://doi.org/10.34
 
 ## Creator
 
-Mohammad Alasawedah - Earth Observation and Climate Data Science
+Mohammad Alasawdah - Earth Observation and Climate Data Science
 [https://www.linkedin.com/in/mohammad-alasawdah-b3b541a5/](https://www.linkedin.com/in/mohammad-alasawdah-b3b541a5/)
 
 ## Contact
