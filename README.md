@@ -1,6 +1,12 @@
 # Weighted Tree-based Crop Classification Models for Imbalanced Datasets
 
-Second place solution to classify crop types in agricultural fields across Northern India using multispectral observations from Sentinel-2 satellite. Ensembled weighted tree-based models "LGBM, CATBOOST, XGBOOST" with stratified k-fold cross validation, taking advantage of spatial variability around each field within different distances.
+Second place solution
+in the [Zindi AgriFieldNet India Challenge](https://zindi.africa/competitions/agrifieldnet-india-challenge)
+to classify crop types in agricultural fields across Northern India using
+multispectral observations from Sentinel-2 satellite. Ensembled weighted
+tree-based models "LGBM, CATBOOST, XGBOOST" with stratified k-fold cross
+validation, taking advantage of spatial variability around each field within
+different distances.
 
 ![model_ecaas_agrifieldnet_silver_v1](https://radiantmlhub.blob.core.windows.net/frontend-ml-model-images/model_ecaas_agrifieldnet_silver_v1.png)
 
